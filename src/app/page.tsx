@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Button from "./components/Button/Button";
 import InformationSection from "./components/InformationSection/InformationSection";
+import GameCard from "./components/GameCard/GameCard";
 
 export default function Home() {
   return (
