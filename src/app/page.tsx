@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HeroBanner from "./components/HeroBanner/HeroBanner";
 import Button from "./components/Button/Button";
 import InformationSection from "./components/InformationSection/InformationSection";
 import GameCard from "./components/GameCard/GameCard";
@@ -6,8 +7,9 @@ import GameCard from "./components/GameCard/GameCard";
 export default function Home() {
   return (
     <>
-      <div className='flex flex-col-reverse md:flex-row items-center px-8 mb-8'>
-        <div className='flex flex-col w-1/2 items-center gap-8 md:gap-16 my-8 md:my-32'>
+      <HeroBanner imageData={{ source: '/snes.jpg', alt: 'SNES console' }} logo='/game-journal-logo.webp' />
+      <div className='flex flex-col-reverse md:flex-row gap-8 items-center px-8 mb-8 md:mb-32'>
+        <div className='flex flex-col w-1/2 items-center gap-8 md:gap-16'>
           <Link className='w-fit' href='/signup'>
             <Button label='Sign Up' type='primary' />
           </Link>
@@ -15,8 +17,8 @@ export default function Home() {
             <Button label='Log in' type='secondary' />
           </Link>
         </div>
-        <div className='w-full md:w-1/2 text-center md:text-left text-4xl whitespace-pre-wrap'>
-        {`Welcome to Game Journal!
+        <div className='w-full md:w-1/2 text-center md:text-left text-xl md:text-4xl whitespace-pre-wrap'>
+          {`Welcome to Game Journal!
 Here you can keep track of your gaming library, plan what you’re next going to play and share your thoughts on your favourite games.`}
         </div>
       </div>
