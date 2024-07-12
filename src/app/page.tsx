@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Button from "./components/Button/Button";
 import InformationSection from "./components/InformationSection/InformationSection";
-import GameCard from "./components/GameCard/GameCard";
+import GameRow from "./components/GameRow/GameRow";
 
 export default function Home() {
   return (
-    <>
+    <div className='w-4/5 mx-auto'>
       <div className='flex flex-col-reverse md:flex-row items-center px-8 mb-8'>
         <div className='flex flex-col w-1/2 items-center gap-8 md:gap-16 my-8 md:my-32'>
           <Link className='w-fit' href='/signup'>
@@ -38,6 +38,6 @@ fsuidf asdif
 fauoisdfhoiasd f
 sadfuashduf 
 asdf ausdfaiosjdfoias'/>
-    </>
+    </div>
   )
 }

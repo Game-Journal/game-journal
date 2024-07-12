@@ -12,6 +12,12 @@ const config: Config = {
       'dodger-blue': '#0496FF',
       'xanthous': '#FFBC42',
       'raspberry': '#D81159',
+    },
+    extend: {
+      gradientColorStopPositions: {
+        2: '-80%',
+        98: '180%',
+      }    
     }
   },
   plugins: [],
